@@ -1,6 +1,6 @@
 # TABLE OF CONTENT
-[About-this-repository](##about-this-repository)
-[About-all-folders](##about-all-folders)
+[About-this-repository](#about-this-repository) <br>
+[About-all-folders](#about-all-folders)
 
 
 ## ABOUT THIS REPOSITORY
