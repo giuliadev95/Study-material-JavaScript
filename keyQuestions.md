@@ -4,7 +4,7 @@
 
 ## ABOUT THIS FILE
 This file is a storage of the key questions related to the arguments you find in the folders "theOdinProject", and "replit". 
-I copy-pasted these question from dedicated pages on The Odin Project website.
+I copied and pasted these questions from the dedicated pages of The Odin Project website, I didn't make anything up.
 
 ## KEY QUESTIONS ON CONDITIONALS
 What are the eight data types in JavaScript? <br>
