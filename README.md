@@ -12,9 +12,7 @@ This is the list of the folders:
 - The "theOdinProject" folder contains all exercises I made following the "Foundations Course" on "The Odin Project" website, as mentioned above.
 
 ## USAGE
-I kept those files as a reference for the basic JavaScript syntax, if you find them useful, clone the repository to keep everything with you. Also check the "keyQuestions.md" to find key questions about the topics.
-
-Testing internal link: [keyQuestions.md](keyQuestions.md).
+I kept those files as a reference for the basic JavaScript syntax, if you find them useful, clone the repository to keep everything with you. Also check the [keyQuestions.md](keyQuestions.md) file to find key questions about the topics.
 
 
 
