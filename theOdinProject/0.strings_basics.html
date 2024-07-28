@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings basics</title>
+</head>
+<body>
+    <h1>Strings, basic concepts</h1>
+    <h2>Arguments you'll find in the console</h2>
+    <ul>
+        <li>console.log() a string.</li>
+        <li>Using quote: single double quotes, and backticks (template literals).</li>
+        <li>declare a string.</li>
+        <li>embedded template literal.</li>
+        <li>simple strings concatenation.</li>
+        <li>writing a string with \n (new line).</li>
+        <li>The escape character " \ " in a 'string'.</li>
+    </ul>
+    <script>
+        // console.log() a string in single quotes, no other internal quotes admitted (like for: I'm / can't)
+        console.log('I am a string between single quotes, I cannot be written with contractions');
+
+        // console.log() a string in double quotes
+        console.log("I'm a string in double quotes");
+
+        // console.log() a string in backticks: template literals
+        console.log(` I'm a string between backticks, centered between spaces for better code readability `);
+
+        // Declare a string and console.log() it
+        const stringOne = "I'm a declared string";
+        console.log(stringOne);
+
+        // Embedded template literal
+        const embeddedTemp = "I'm embedded content";
+        const embeddingConst = `Place the embedded literal here in double quotes: "${embeddedTemp}."`;
+        console.log(embeddingConst);
+
+        // Strings concatenation
+        const hello = "Hello,";
+        const howAreYou = "how are you?";
+        const question = ` ${hello} ${howAreYou}`
+        console.log(question);
+        
+        // String with \n
+        const newLineString= "This string makes use of a \nnew line character.\nNo spaces after it at the starting new line.";
+        console.log(newLineString);
+
+        // String with the "\" escape character
+        const escapeChar = ' I\'ve got work to do.'
+        console.log(escapeChar);
+        
+    </script>
+</body>
+</html>

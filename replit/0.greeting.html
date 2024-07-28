@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting</title>
+</head>
+<body>
+    <h1>Greetings</h1>
+
+    <p>
+        Please, check the console.log() content to see the code snippet running.
+        <br/>
+        It says 
+        <strong> <em>
+            "Hi, my name is Carlos Stevenson, and I'm 18 years old."
+        </strong> </em>
+    </p>
+
+    
+    <script>
+        /* Define a function that logs in the console a greeting msg, based on the following 
+        variables: first name, last name, birth year, this current year.
+        */
+        function greeting( firstName = 'Carlos', lastName = 'Stevenson', birthYear = 1947, thisYear = 1965)
+        {
+            console.log(`Hi, my name is ${firstName} ${lastName}, and I'm ${(thisYear - birthYear)} years old.`);
+        }
+        // Call the function and check the console.log().
+        greeting();
+
+    </script>
+</body>
+</html>

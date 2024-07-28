@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <button type="button">Nome</button>
+    <div id="saluto"></div>
+
+    <script>
+            // prendo il bottone <button> con un querySelector
+            const trigger = document.querySelector("button");
+            
+            // inizializzo la funzione salutaUser
+            function salutaUser() {
+
+                // prompto l'utente a rispondere a una domanda 
+                const promptUser = prompt("Ciao, come ti chiami?"); 
+
+                // conservo la risposta del prompt in una variabile, che poi proietto nello spazio <div>
+                const nome = promptUser;
+
+                // proietto la risposta nel div tramite la funzione "textContent"
+                document.getElementById("saluto").textContent = (`Ciao, ${nome}!`);
+               
+            }
+
+            // chiamo la funzione "salutaUser" quando si clicca sul bottone: uso adventListener
+            trigger.addEventListener("click", salutaUser);
+    </script>
+</body>
+</html>

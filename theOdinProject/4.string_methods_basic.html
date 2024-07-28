@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+</head>
+<body>
+    <h1>Strings' methods</h1>
+    <h2>Concepts you'll find logged in the console</h2>
+    <ul>
+        <li> string.lenght </li>
+        <br>
+        <li> word count in a string </li>
+        <br>
+        <li> charCodeAt() </li>
+    </ul>
+    <h3>Exercise space</h3>
+    <p>(you have to check the console to give a sense to it)</p>
+    <h4>n.1</h4>
+    <p id="paragraph">The legnth of a string could be: (returning it below via JavaScript)</p>
+    <div id="receiver"></div>
+    <script>
+        let changing = "My type changes";
+
+        // Applying the Number() method on a string that can't be 
+        // turned into a number returns "undefined" in the console
+        console.log(Number.changing);
+
+        // .lenght method, it counts the spaces too.
+        const myLenght = "Measure my lenght";
+        console.log(myLenght.length);
+
+        // words count in a string
+        const paragraph = "one, two, three-four, isn't it eight?";
+        const wordCount = paragraph.match(/\b\w+\b/g).length;
+        console.log(wordCount);
+
+        // charCodeAt()
+        const charCode = "Loris ipse per agros se agit"
+        console.log( charCode.charCodeAt(1) );
+
+        // from Unicode to a character
+        const char = String.fromCharCode(111);
+        console.log(char);
+
+        // .at(n) to return the leter at the n position of a string, starting from the 0 position.
+        const stringOne = "Questo è string.at(n)";
+        console.log( stringOne.at(1));
+
+
+        // Exercise space n.1
+            // Inizialize a string and log its lenght
+            const string = "I'm a random string of 36 characters";
+            console.log(string.length);
+            const strinLenght = string.length;
+            console.log(strinLenght);
+            console.log(typeof strinLenght);
+
+            // point to the innerHTML of the receiver
+           const receiver = document.getElementById("receiver");
+
+           // attach the new text to the receiver
+           receiver.innerHTML = strinLenght;
+
+  
+    </script>
+</body>
+</html>

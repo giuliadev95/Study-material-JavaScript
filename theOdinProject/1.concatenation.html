@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.concatenation</title>
+    <style>
+        button { 
+                margin: 0 50% auto;
+        }
+
+        ul {
+            padding: 5px 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Concatenation</h1>
+    <h2>Arguments of this page</h2>
+    <ul>
+        <li>
+            A greet button that prompts the user to insert his/her name and returns a greeting in the div element below.
+        </li>
+        <br>
+        <li>
+            Notice in the console that the text of the string "Hi," is declared as a variable,
+            and then embedded in the final <strong>template literal.</strong>
+        </li>
+        <br>
+        <li>
+            We used the <strong>window.prompt()</strong> method to prompt the user for his/her name
+        </li>
+    </ul>
+    <button type="button"> Greet </button>
+    <div id="greetUser"></div>
+
+    <script>
+        // point to the button to trigger the greet function later
+        const greetTrigger = document.querySelector("button");
+
+        function greet() {
+            // inizialize a variable that prompts the user for telling his/her name
+            const name = prompt("What's your name?");
+
+            // point to the <div> element's #id to store the answer of the prompt
+                const greetPlace = document.getElementById("greetUser");
+
+            // declare a variable to store the string for the greeting
+            const stringText = "Hi,"
+
+            // display as text content of the div the answer previously stored in the div by id
+                greetPlace.textContent = `${stringText} ${name}!`;
+
+        }
+
+        // Set the environment to listen for a click that triggers the greet() function
+        greetTrigger.addEventListener("click", greet); 
+    </script>
+</body>
+</html>

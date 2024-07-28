@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversions</title>
+</head>
+<body>
+    <h1> From number to string and viceversa </h1>
+    <h2>Here are the concepts you'll find in the console</h2>
+    <ul>
+        <li>Number()</li>
+
+        <li>String()</li>
+
+        <li>parseInt()</li>
+
+        <li>parseFloat()</li>
+    </ul>
+  
+    <script>
+        // from string to number
+        let number = '1';
+        number = Number(number);
+        console.log(typeof number);
+        console.log(number);
+
+        // from number to string
+        let string = 1;
+        string = String(string);
+        console.log(typeof string);
+        console.log(string);
+
+        // Turn a string into an integer with truncation of the decimals
+        let two = '2.9';
+        console.log(parseInt(two));
+        console.log(parseFloat(two));
+    </script>
+</body>
+</html>

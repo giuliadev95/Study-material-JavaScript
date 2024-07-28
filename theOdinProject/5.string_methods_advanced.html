@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced string methods</title>
+    <style>
+        p {
+            width: 80%;
+            justify-content: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced string methods</h1>
+    <h2>Numbered topics</h2>
+    <ol>
+        <li>JavaScript String slice()</li>
+        <li>JavaScript String replace()</li>
+        <li>Turn a string into an array and pick the element from a determined position</li>
+    </ol>
+
+    <br>
+    <div>
+        <h2>Corresponding exercises</h2>
+        <p><small><em>
+            The following texts can be understood only checking the code of this .html file, 
+            and taking the script content as a reference. Also, you want to check the console.log, because I sometimes used it for debugging.
+        </em></small></p>
+
+        <p id="exerciseOne">
+        </p>
+
+        <p id="exerciseTwo">     
+        </p>
+
+        <p id="exerciseThree">     
+        </p>
+    </div>
+
+    <script>
+
+        // .sliced() and add the sliced text to the paragraph element of the htmld document.
+        let textComplete = 'I`m a string to chop.'
+
+        let slicedText = textComplete.slice(2, 9);
+
+        // Take the <p> element by #id and append text into <p>
+        document.getElementById('exerciseOne').textContent = (`1) ${slicedText}`);
+
+
+        // .replace()
+        // Apply the .replace() function to a string
+        let textToReplace = 'Some text will be replaced.'
+        let replacedText = textToReplace.replace('Some', "This");
+
+        // Show the obtained string into the <p> element of the html document's body, with #id = exerciseTwo.
+        document.getElementById('exerciseTwo').textContent = ( ` 2) ${replacedText}`)
+
+        // Turn the string into an array
+        let stringToArray = replacedText.split(" ");
+
+        // To check if it was successful, console.log the 'type of the array'
+        console.log(typeof stringToArray);
+
+        // Console.log the first element of the array, to check it works (that is the first word of the ex-string).
+        console.log(stringToArray[0]);
+
+        // Turn this first element into a variable so to use it easily
+        let arrayFirst = stringToArray[0];
+
+        // Finally, show this first element into the <div> with #id exerciseThree in the .html document's body.
+            document.getElementById('exerciseThree').textContent = (`3) ${arrayFirst}`);
+
+       
+    </script>
+</body>
+</html>
