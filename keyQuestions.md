@@ -1,6 +1,6 @@
 # TABLE OF CONTENT
-[About-this-file](#about-this-file)
-[Key-questions-on-conditionals](#key-questions-on-conditionals)
+[About-this-file](#about-this-file) <br>
+[Key-questions-on-conditionals](#key-questions-on-conditionals) <br>
 
 ## ABOUT THIS FILE
 This file is a storage of the key questions related to the arguments you find in the folders "theOdinProject", and "replit". 
