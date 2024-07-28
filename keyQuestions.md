@@ -7,7 +7,7 @@ This file is a storage of the key questions related to the arguments you find in
 I copy-pasted these question from dedicated pages on The Odin Project website.
 
 ## KEY QUESTIONS ON CONDITIONALS
-What are the eight data types in JavaScript?
+What are the eight data types in JavaScript? <br>
 Which data type is NOT primitive?
 What is the relationship between null and undefined?
 What is the difference between single, double, and backtick quotes for strings?
