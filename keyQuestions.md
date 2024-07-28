@@ -8,20 +8,20 @@ I copy-pasted these question from dedicated pages on The Odin Project website.
 
 ## KEY QUESTIONS ON CONDITIONALS
 What are the eight data types in JavaScript? <br>
-Which data type is NOT primitive?
-What is the relationship between null and undefined?
-What is the difference between single, double, and backtick quotes for strings?
-What is the term for joining strings together?
-Which type of quote lets you embed variables/expressions in a string?
-How do you embed variables/expressions in a string?
-How do you use escape characters in a string?
-What is the difference between the slice/substring/substr string methods?
-What are the three logical operators, and what do they stand for?
-What are the comparison operators?
-What are truthy and falsy values?
-What are the falsy values in JavaScript?
-What are conditionals?
-What is the syntax for an if/else conditional?
-What is the syntax for a switch statement?
-What is the syntax for a ternary operator?
-What is nesting?
+Which data type is NOT primitive? <br>
+What is the relationship between null and undefined? <br>
+What is the difference between single, double, and backtick quotes for strings? <br>
+What is the term for joining strings together? <br>
+Which type of quote lets you embed variables/expressions in a string? <br>
+How do you embed variables/expressions in a string? <br>
+How do you use escape characters in a string? <br>
+What is the difference between the slice/substring/substr string methods? <br>
+What are the three logical operators, and what do they stand for? <br>
+What are the comparison operators? <br>
+What are truthy and falsy values? <br>
+What are the falsy values in JavaScript? <br>
+What are conditionals? <br>
+What is the syntax for an if/else conditional? <br>
+What is the syntax for a switch statement? <br>
+What is the syntax for a ternary operator? <br>
+What is nesting? <br>
