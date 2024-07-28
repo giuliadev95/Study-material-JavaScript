@@ -5,7 +5,7 @@
 
 ## ABOUT THIS REPOSITORY
 This repository contains the exercises I did following along an online course to learn JavaScript. 
-The course is The Odin Project > <a href="https://www.theodinproject.com/paths/foundations/courses/foundations" target="_blank">Foundation Course</a>.
+The course is The Odin Project > <a href="https://www.theodinproject.com/paths/foundations/courses/foundations" target="_blank" rel="noopener noreferrer">Foundations Course</a>.
 
 
 ## ABOUT ALL FOLDERS
