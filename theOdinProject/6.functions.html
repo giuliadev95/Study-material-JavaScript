@@ -13,9 +13,11 @@
     <ol>
         <li id="animal"> My favourite animal is: </li>
         <li id="sum">Those are two returned parametres: </li>
+        <li id="keyDown">You pressed: </li>
     </ol>
 
     <script>
+        
         function myAnimal() {
             let animal = prompt("What's your favourite animal?");
             document.getElementById('animal').append(animal);
@@ -23,15 +25,15 @@
         myAnimal();
 
         function sum() {
-
+            
             const param1 = 2;
             const param2 = 6;
             const sumInt = param1 + param2;
             document.getElementById('sum').append(sumInt);
             
         }
-
-       sum();
+        
+        sum();
     </script>
 </body>
 </html>

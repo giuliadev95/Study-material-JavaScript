@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Generate a random name</h1>
+    <p class="showArray"></p>
+
+    <!-- Add a button to activate the function -->
+    <button type="button" onclick="chooseName()"> Generate a random name </button>
+
+    <script>
+
+        // Initializing array of name values
+
+        const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+
+        // Print the name "Chris" when the page is refreshed.
+        // take the first element with array slice
+        // Print the first element in the <p>
+            function printName() {
+                const firstName = names.slice(0,1);
+                document.querySelector('.showArray').textContent = ` ${firstName}`;
+            }
+            // Ensure the function runs when the page loads
+            window.onload = printName;
+
+        // Create a function to randomly display them as the content of the <p> element
+        function chooseName() {
+        let randomName = (names[(Math.floor(Math.random() * names.length))]);
+        console.log('You can see a random name as the paragraph content.\nRefresh to change the name.');
+        document.querySelector('.showArray').textContent = ` ${randomName} `;
+        }
+
+        chooseName();
+    
+    </script>
+</body>
+</html>
