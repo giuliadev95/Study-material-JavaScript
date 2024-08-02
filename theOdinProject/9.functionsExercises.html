@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Exercises on functions</h1>
+    <h2>Instructions</h2>
+    <ul>
+        <li>
+            <p>
+                Please, check the console.log() to read the assignment for each exercise.
+                <br>
+                Also, follow the functions development reading the code in the script tag.
+            </p>
+        </li>
+        <li>
+            <p>
+                Here there's the
+                <a href="https://www.theodinproject.com/lessons/foundations-function-basics" target="_blank" rel="noopener noreferrer">
+                    link
+                </a>
+                to the exercises page on the Odin Project.
+            </p>      
+        </li>
+    </ul>
+
+    <h2>Exercises</h2>
+    <ol>
+        <li>
+            <p id="add">
+                
+            </p>
+        </li>
+
+        <li>
+            <input type="number" id="num1"/> 
+            <button type="button" onclick="multiply()"> x </button>
+            <input type="number" id="num2"/> 
+            <span>
+                    =
+            </span>
+            <input type="number" id="result" value="" readonly /> 
+            <p id="error-message" style="color:red;"></p>
+            <br>
+            <button type="button" onclick="clearInput()">Clear</button> 
+        </li>
+    </ol>
+
+    <script>
+
+        // 1. Write a function called add7 that takes one number and returns that number + 7.
+
+        console.log('1. Write a function called add7 that takes one number and returns that number + 7.');
+        let add7 = n =>(n + 7);
+        let three = add7(3);
+        document.getElementById('add').textContent = three;
+
+        // 2. Write a function called multiply that takes 2 numbers and returns their product.
+
+        console.log('2. Write a function called multiply that takes 2 numbers and returns their product.');
+
+        function multiply() {
+
+            // Define num1 and num2 as constants taken from the 2 input field of the html, use id for connection.
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const result = num1 * num2;
+            const errorMessage = document.getElementById('error-message');
+
+            // claear the input fields if num1 and num2 are not numbers
+            if ( isNaN(num1) || isNaN(num2) ) {
+                errorMessage.textContent = 'Please, enter valid numbers.'
+                result.value = '';
+                return;
+            }
+
+            else {
+                errorMessage.textContent = '';
+                const showResult = document.getElementById('result').value = result;
+                return;
+            }
+        }
+       
+        function clearInput() {
+
+            // Take the content of the 3 input fields, and of the error-meaage and clear it.
+            // Do not use clear as name as it is a reserved word.
+            document.getElementById('num1').value = '';
+            document.getElementById('num2').value = '';
+            document.getElementById('result').value = '';
+         document.getElementById('error-message').textContent = '';
+        }
+
+        // 3. Write a function called capitalize that takes a string and returns that string 
+        // with only the first letter capitalized. Make sure that it can take strings 
+        // that are lowercase, UPPERCASE or BoTh.
+        console.log('3. Write a function called capitalize that takes a string and returns that string\nwith only the first letter capitalized. Make sure that it can take strings\nthat are lowercase, UPPERCASE or BoTh.')
+
+    </script>
+</body>
+</html>
